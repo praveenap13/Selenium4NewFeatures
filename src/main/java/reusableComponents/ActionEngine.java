@@ -1,15 +1,21 @@
 package reusableComponents;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.aventstack.extentreports.Status;
 
 import testBase.DriverFactory;
 import testBase.ExtentFactory;
+
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author: Prakash Narkhede
@@ -134,6 +140,16 @@ public class ActionEngine {
 
         }
         return text;
+    }
+
+    public void waitTillElementVisibility(WebElement element){
+        WebDriverWait wait =new WebDriverWait(DriverFactory.getInstance().getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+    public void waitTillElementToBeClickable(WebElement element){
+        WebDriverWait wait =new WebDriverWait(DriverFactory.getInstance().getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
 }

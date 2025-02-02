@@ -32,9 +32,9 @@ public class LoginPage extends TestBase {
         sendKeys_custom(DriverFactory.getInstance().getDriver().findElement(SIGNUPEmail),"Email",email);
 
     }
-//    public void clickOnMenu(String menuName){
-//       String menuPath="div[@class='shop-menu pull-right']/ul/li/a[contains(text(),'"+menuName+"')]";
-//        driver.findElement(By.xpath(menuPath)).click();
-//    }
+    public void clickOnMenu(String menuName){
+       String menuPath="//div[@class='shop-menu pull-right']/ul/li/a[contains(text(),'"+menuName+"')]";
+        DriverFactory.getInstance().getDriver().findElement(By.xpath(menuPath)).click();
+    }
 
 }
