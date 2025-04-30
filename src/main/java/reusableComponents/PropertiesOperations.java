@@ -1,7 +1,6 @@
 package reusableComponents;
 
 import org.apache.commons.lang3.StringUtils;
-
 import java.io.FileInputStream;
 import java.util.Properties;
 

@@ -24,6 +24,8 @@ public class UserLoginTests extends TestBase {
     public void Testcase2() throws InterruptedException {
 
         productPage.clickOnMenu("Products");
+        productPage.enterSearchText("Sony VAIO");
+        productPage.clickOnSubmitSearchButton();
 
         //productPage.enterSearchText("Women");
        // productPage.clickOnSubmitSearchButton();

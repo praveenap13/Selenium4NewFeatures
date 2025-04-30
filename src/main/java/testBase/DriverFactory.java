@@ -3,14 +3,12 @@ package testBase;
 import org.openqa.selenium.WebDriver;
 
 public class DriverFactory {
-
     //Singleton design Pattern
     //private constructor so that no one else can create object of this class
     private DriverFactory() {
-
     }
 
-    private static DriverFactory instance  = new DriverFactory();
+    private static final DriverFactory instance  = new DriverFactory();
 
     public static DriverFactory getInstance() {
         return instance;
