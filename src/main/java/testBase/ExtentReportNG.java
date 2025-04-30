@@ -19,7 +19,7 @@ public class ExtentReportNG {
 //        String reportPath = System.getProperty("user.dir")+
 //                "/Reports/ExecutionReport_"+actualDate+".html";
         String reportPath = System.getProperty("user.dir")+
-                "target/surefire-reports/Reports/ExecutionReport.html";
+                "Reports/ExecutionReport.html";
 
         ExtentSparkReporter sparkReport = new ExtentSparkReporter(reportPath);
 
