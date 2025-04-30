@@ -16,8 +16,10 @@ public class ExtentReportNG {
         Date date = new Date();
         String actualDate = format.format(date);
 
+//        String reportPath = System.getProperty("user.dir")+
+//                "/Reports/ExecutionReport_"+actualDate+".html";
         String reportPath = System.getProperty("user.dir")+
-                "/Reports/ExecutionReport_"+actualDate+".html";
+                "/Reports/ExecutionReport.html";
 
         ExtentSparkReporter sparkReport = new ExtentSparkReporter(reportPath);
 

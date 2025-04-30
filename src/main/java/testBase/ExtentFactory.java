@@ -13,7 +13,9 @@ public class ExtentFactory {
         return instance;
     }
 
-    //factory design pattern --> define separate factory methods for creating objects and create objects by calling that methods
+    //factory design pattern -->
+    // define separate factory methods for creating objects
+    // and create objects by calling that methods
     ThreadLocal<ExtentTest> extent = new ThreadLocal<ExtentTest>();
 
     public ExtentTest getExtent() {
