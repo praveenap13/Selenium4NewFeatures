@@ -17,13 +17,13 @@ public class UserLoginTests extends TestBase {
     @Test
     public void Testcase1() throws InterruptedException {
         Thread.sleep(2);
-//        loginPage.login("pravina","pravina@gmail.com");
-//        System.out.println("First");
+
     }
     @Test
     public void Testcase2() throws InterruptedException {
 
         productPage.clickOnMenu("Products");
+        Thread.sleep(2);
         productPage.enterSearchText("Sony VAIO");
         productPage.clickOnSubmitSearchButton();
 
